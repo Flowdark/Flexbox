@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h1, h2, h3, p{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    position: relative;
+}
+
+.btn{
+    display: inline-block;
+    width: 17rem;
+    font-size: 1.7rem;
+    padding: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+
+    display: block;
+}
+
+.btn-naranja{
+    background-color: #F99805;
+    color: white;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 80px;
+    padding: 2rem 5rem;
+}
+
+.logo{
+    flex-basis: 50%;
+}
+
+.others{
+    display: flex;
+    align-items: center;
+}
+
+.others .section{
+    width: 18rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    border-right: 1px solid #ADB1B0;
+    padding-left: 2rem;
+}
+
+.section:first-child{
+    padding-left: 0;
+}
+
+.section:last-child{
+    border-right: none;
+}
+
+.section .title{
+    display: block;
+    font-size: 1.2rem;
+    color: #ADB1B0;
+
+    text-transform: uppercase;
+}
+
+.section p{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.login{
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: .5rem;
+
+    background-color: white;
+    border: 2px solid dodgerblue;
+
+    cursor: pointer;
+}
+
+.icono{
+    margin-left: 1rem;
+    color: dodgerblue;
+    font-size: 1.5rem;
+}
+
+.icono-blanco{
+    color: white;
+}
+
+/*Menu Topbar*/
+.topbar{
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    background-color: #17A43B;
+    justify-content: center;
+}
+
+.topbar .pages{
+    flex-basis: 55%;
+}
+
+.topbar .pages a{
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+
+    padding: 0 2rem;
+    border-right: 1px solid white;
+}
+
+.pages a:last-child{
+    border-right: none;
+}
+
+.topbar .search{
+    flex-basis: 30%;
+    height: 100%;
+
+    background-color: #4BB867;
+}
+
+.search form{
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+
+    font-size: 1.8rem;
+    color: white !important;
+
+}
+
+.search form input{
+    width: 50%;
+    background-color: transparent !important;
+    border: none;
+    outline: none;
+
+    border-bottom: 1px solid white;
+    line-height: 4rem;
+
+    transition: width 1s;
+}
+
+form input:focus{
+    width: 100%;
+}
+
+.enviar{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+
+/*Hero*/
+.hero{
+    background-image: url('../img/banner1.jpg');
+    height: 50rem;
+
+    position: relative;
+    
+}
+
+.hero-content{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contenido{
+    width: 70%;
+    margin: 0 auto;
+    height: 25rem;
+    color: white;
+}
+
+.contenido h1{
+    font-size: 5rem;
+}
+
+.contenido h2{
+    font-size: 3rem;
+}
+
+.contenido .text{
+    width: 70%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    font-size: 1.5rem;
+}
+
+/*Services*/
+
+.services{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    bottom: 80px;
+    width: 100%;
+
+    padding: 0 5rem;
+}
+
+.service{
+    width: calc(100% / 3);
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    padding: 2rem;
+}
+
+.service-img img{
+    width: 100%;
+}
+
+.service-img{
+    width: 40%;
+    margin-right: 1rem;
+}
+
+.service-body h3{
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.service-body p{
+    color: white;
+    font-size: 1.3rem;
+}
+
+.service-naranja{background-color: dodgerblue;}
+.service-azul{background-color: orange;}
+.service-amarillo{background-color: #EFBC01;}
